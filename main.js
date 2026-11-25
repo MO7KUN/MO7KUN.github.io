@@ -93,6 +93,33 @@ document.addEventListener('DOMContentLoaded', () => {
       formNote: 'يفتح هذا النموذج تطبيق البريد الإلكتروني لديك. لا يتم تخزين أي رسالة على هذا الموقع.'
     }
   };
+  Object.assign(translations.en, {
+  "availability": "AI/ML INTERNSHIP · FEBRUARY 2027",
+  "heroLead": "I’m Mohamed Laaribi, an MSc student in Intelligent Systems Engineering at Ibn Tofail University. I evaluate machine learning models and build French-language NLP applications.",
+  "mlTitle": "Applied machine learning and NLP",
+  "cvDownload": "Download CV",
+  "footballResult": "Our two-person team studied 14,065 player-season records. On the 2025 holdout, the model’s mean absolute error was €7.65m. A player’s last valuation performed better on the matched subset.",
+  "hotelResult": "Tested room-price predictions on properties held out from training. Mean absolute error was €51.15 per night. Simple baselines remained competitive.",
+  "botResult": "Built a French-language campus assistant with Rasa. When a student asks about opening hours, it asks which service they need. Three Docker services run the application, with automated tests in GitHub Actions."
+});
+  Object.assign(translations.fr, {
+  "availability": "STAGE IA / ML · FÉVRIER 2027",
+  "heroLead": "Je suis Mohamed Laaribi, étudiant en master d’ingénierie des systèmes intelligents à l’Université Ibn Tofail. J’évalue des modèles prédictifs et développe des applications de traitement du français.",
+  "mlTitle": "Apprentissage automatique et TAL",
+  "cvDownload": "Télécharger le CV",
+  "footballResult": "Notre binôme a étudié 14 065 observations joueur-saison. Sur le test de 2025, l’erreur absolue moyenne atteint 7,65 M€. La dernière valorisation connue est plus précise sur le sous-ensemble comparable.",
+  "hotelResult": "Sur des établissements exclus de l’entraînement, l’erreur absolue moyenne atteint 51,15 € par nuit. Les méthodes de référence simples restent compétitives.",
+  "botResult": "J’ai développé un assistant universitaire francophone avec Rasa. Si un étudiant demande les horaires, il précise le service concerné. L’application utilise trois services Docker et des tests automatisés dans GitHub Actions."
+});
+  Object.assign(translations.ar, {
+  "availability": "تدريب في الذكاء الاصطناعي · فبراير 2027",
+  "heroLead": "أنا محمد لعريبي، طالب ماستر هندسة الأنظمة الذكية بجامعة ابن طفيل. أقيّم نماذج التعلّم الآلي وأطوّر تطبيقات لمعالجة اللغة الفرنسية.",
+  "mlTitle": "التعلّم الآلي التطبيقي ومعالجة اللغة الطبيعية",
+  "cvDownload": "تنزيل السيرة الذاتية",
+  "footballResult": "درس فريقنا المكوّن من شخصين 14,065 سجلًا للاعبين حسب الموسم. بلغ متوسط الخطأ المطلق 7.65 ملايين يورو في اختبار 2025، وكان التقييم السابق أدقّ على العيّنة القابلة للمقارنة.",
+  "hotelResult": "اختبرت النموذج على فنادق لم تُستخدم في التدريب. بلغ متوسط الخطأ المطلق 51.15 يورو لليلة، وظلّت الطرق المرجعية البسيطة منافسة.",
+  "botResult": "طوّرت مساعدًا جامعيًا بالفرنسية باستخدام Rasa. عندما يسأل الطالب عن أوقات العمل، يستوضح المساعد أيّ مصلحة يقصد. يعمل التطبيق عبر ثلاث خدمات Docker مع اختبارات آلية في GitHub Actions."
+});
   const languageButtons = document.querySelectorAll('.language-button');
   const setLanguage = language => {
     const copy = translations[language] || translations.en;
